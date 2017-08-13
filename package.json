@@ -1,0 +1,22 @@
+{
+  "name": "learning",
+  "version": "0.0.1",
+  "description": "A repo about learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acker2015/learn-record.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Acker2015/learn-record/issues"
+  },
+  "homepage": "https://github.com/Acker2015/learn-record#readme",
+  "devDependencies": {
+    "webpack": "^3.5.4"
+  }
+}

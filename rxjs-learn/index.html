@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dscharts</title>
+	<style type="text/css">
+        body {
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        h2 {
+            font-weight: bold;
+            display: inline-block;
+        }
+        .refresh {
+            font-size: 80%;
+            margin-left: 10px;
+        }
+        .header {
+            background: #ECECEC;
+            padding: 5px;
+        }
+        .suggestions {
+            border: 2px solid #ECECEC;
+        }
+        li {
+            padding: 5px;
+        }
+        li img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        li .username, li .close {
+            display: inline-block;
+            position: relative;
+            bottom: 15px;
+            left: 5px;
+        }
+        li .close, .refresh{
+            display: inline-block;
+            background-color: #3187f6;
+            border-color: #3187f6;
+            border-radius: 2px;
+            color: #fff;
+            text-align: center;
+            min-width:40px;
+            text-decoration: none;
+            padding: 3px 10px;
+        }
+        li .close:hover, .refresh:hover{
+            background-color: #519afa;
+        }
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Who to follow</h2><a href="#" class="refresh">Refresh</a>
+        </div>
+        <ul class="suggestions">
+            <li class="suggestion1">
+                <img />
+                <a href="#" target="_blank" class="username">this will not be displayed</a>
+                <a href="#" class="close close1">x</a>
+            </li>
+            <li class="suggestion2">
+                <img />
+                <a href="#" target="_blank" class="username">neither this</a>
+                <a href="#" class="close close2">x</a>
+            </li>
+            <li class="suggestion3">
+                <img />
+                <a href="#" target="_blank" class="username">nor this</a>
+                <a href="#" class="close close3">x</a>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/rxjs/bundles/Rx.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript">
+        // $.getJSON('https://api.github.com/users?since=5')
+        //     .done(res => {
+        //         console.log(res);
+        //     })
+        //     .fail(res => {
+        //         console.log(res);
+        //     })
+        // debugger;
+    </script>
+</body>
+</html>

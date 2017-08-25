@@ -1,0 +1,7 @@
+{
+	"preset":[
+		"latest",
+		"stage-2"
+	],
+	"plugins": []
+}

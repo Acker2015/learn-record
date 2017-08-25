@@ -1,3 +1,6 @@
-node_modules
-npm-debug.log
-debug.log
+﻿#过滤文件夹Debug,Release,obj  
+node_modules/
+rxjs-learn/node_modules
+index-old.js
+util-old.js
+ 

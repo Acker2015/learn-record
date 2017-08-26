@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>dscharts</title>
+	<title>Rx.js</title>
 	<style type="text/css">
         body {
             font-family: sans-serif;
@@ -51,6 +51,18 @@
         li .close:hover, .refresh:hover{
             background-color: #519afa;
         }
+        .time, .money, .house {
+            display: inline-block;
+            padding:10px 15px;
+            background-color: #61b2a7;
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+        div.mr{
+            margin-top: 20px;
+        }
 	</style>
 </head>
 <body>
@@ -76,8 +88,16 @@
             </li>
         </ul>
     </div>
+    <div>
+        <span class="time"></span>
+    </div>
+    <div class="mr">
+        <span class="money"></span>
+        <span class="house"></span>
+    </div>
     <script type="text/javascript" src="https://unpkg.com/rxjs/bundles/Rx.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./lib/moment.js"></script>
     <script type="text/javascript" src="./index.js"></script>
     <script type="text/javascript">
         // $.getJSON('https://api.github.com/users?since=5')

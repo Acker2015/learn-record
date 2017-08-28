@@ -15,9 +15,9 @@ sourceObservable.switchMap() : Observable
 */
 const timer$ = Rx.Observable
     //执行完merge这时候流中有两个流中流对象(Observable的observable)
-    .merge(pause$, resume$, Rx.Observable.of(interval$))
+    .merge(pause$, resume$)
     //执行完startWith这时候流中有三个流中流（Observable中的值仍然是Observable对象）
-    //.startWith(interval$) 
+    .startWith(interval$) 
     /*
      *  每当流中有Observable对象的对象更新都会使用switchMap映射到一个新的Observable对象,这里分三种情况
         1.初始进入页面，interval$对象会首先通过switchMap将自己返回作为一个1s发出一个值的Observable对象

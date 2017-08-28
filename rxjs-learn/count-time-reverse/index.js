@@ -8,7 +8,11 @@ const interval$ = Rx.Observable.interval(1000).mapTo(-1);
 
 const pause$ = Rx.Observable.fromEvent(pauseButton, 'click').mapTo(Rx.Observable.of(false));
 const resume$ = Rx.Observable.fromEvent(resumeButton, 'click').mapTo(interval$);
-
+/*
+switchMap: https://rxjs-cn.github.io/learn-rxjs-operators/operators/transformation/switchmap.html
+sourceObservable.switchMap() : Observable
+当sourceObservable发出值的时候，switchMap会立刻映射切换新的Observable
+*/
 const timer$ = Rx.Observable
     //执行完merge这时候流中有两个流中流对象(Observable的observable)
     .merge(pause$, resume$, Rx.Observable.of(interval$))

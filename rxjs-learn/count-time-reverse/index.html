@@ -66,53 +66,16 @@
 	</style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h2>Who to follow</h2><a href="#" class="refresh">Refresh</a>
-        </div>
-        <ul class="suggestions">
-            <li class="suggestion1">
-                <img />
-                <a href="#" target="_blank" class="username">this will not be displayed</a>
-                <a href="#" class="close close1">x</a>
-            </li>
-            <li class="suggestion2">
-                <img />
-                <a href="#" target="_blank" class="username">neither this</a>
-                <a href="#" class="close close2">x</a>
-            </li>
-            <li class="suggestion3">
-                <img />
-                <a href="#" target="_blank" class="username">nor this</a>
-                <a href="#" class="close close3">x</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <span class="time"></span>
-    </div>
-    <div class="mr">
-        <span class="money"></span>
-        <span class="house"></span>
-    </div>
     <div class="mr">
         <h4>Time Remaining: <span id="remaining"></span></h4>
-        <button id="pause" class="close">Pause Timer</button>
-        <button id="resume" class="close">Resume Timer</button>
+        <button id="pause" class="time">Pause Timer</button>
+        <button id="resume" class="time">Resume Timer</button>
     </div>
     <script type="text/javascript" src="https://unpkg.com/rxjs/bundles/Rx.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./lib/moment.js"></script>
+    <script type="text/javascript" src="../lib/moment.js"></script>
     <script type="text/javascript" src="./index.js"></script>
     <script type="text/javascript">
-        // $.getJSON('https://api.github.com/users?since=5')
-        //     .done(res => {
-        //         console.log(res);
-        //     })
-        //     .fail(res => {
-        //         console.log(res);
-        //     })
-        // debugger;
     </script>
 </body>
 </html>
